@@ -1,0 +1,46 @@
+.homepage {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50%;
+}
+
+.me-text {
+  color: rgb(238, 201, 37);
+  text-align: center;
+  span {
+    color: rgb(64, 34, 230);
+  }
+
+  p {
+    margin-top: 20px;
+    color: rgb(64, 230, 138);
+  }
+}
+
+.icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0;
+
+  .icon-link {
+    margin: 10px;
+    .icon {
+      font-size: 40px;
+      color: sandybrown;
+      transition: 1s;
+    }
+
+    .vk:hover {
+      color: rgb(0, 119, 255);
+    }
+    .inst:hover {
+      color: rgb(255, 0, 255);
+    }
+    .git:hover {
+      color: rgb(213, 228, 226);
+    }
+  }
+}

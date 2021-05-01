@@ -1,4 +1,8 @@
 @import './styles/layout';
+@import './styles/navbar';
+@import "./styles/homepagetext";
+@import "./styles/contacts";
+@import "./styles/slider";
 
 *{
     padding: 0;
@@ -8,5 +12,5 @@
 
 body{
     color: #a4acc4;
-    font-size: .2rem;
+    font-size: 1.2rem;
 }
