@@ -12,17 +12,17 @@ const NavBar = () => {
         <ul className="nav-items">
           <li className="nav-item">
             <NavLink to="/" exact activeClassName="active">
-              Home
+              Главная страница
             </NavLink>
           </li>
           <li className="nav-item">
             <NavLink to="/gallery" exact activeClassName="active">
-              Gallery
+              Галерея
             </NavLink>
           </li>
           <li className="nav-item">
             <NavLink to="/contacts" exact activeClassName="active">
-              Contacts
+             Контакты
             </NavLink>
           </li>
         </ul>

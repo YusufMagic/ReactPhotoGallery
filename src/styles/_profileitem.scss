@@ -1,0 +1,36 @@
+.ProfileItem {
+  width: 100%;
+  h2 {
+    text-align: center;
+    margin-top: 40px;
+    color: blueviolet;
+  }
+  h3, h4 {
+    color: blueviolet;
+  }
+  span {
+      color: rgb(10, 163, 10);
+  }
+  .profile {
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    margin-top: 20px;
+    margin-left: 20px;
+    .item {
+        margin: 10px 0;
+      width: 100%;
+    }
+  }
+}
+
+.tech_item {
+  margin-top: 20px;
+ 
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+
+  .tech_item__elem {
+    margin: 10px 0;
+    text-align: center;
+  }
+}

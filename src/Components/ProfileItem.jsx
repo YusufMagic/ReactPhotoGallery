@@ -5,29 +5,32 @@ const ProfileItem = (props) => {
     <div className="ProfileItem">
       <div className="profile">
         <div className="item">
-          <h2>
-            Name: <span>{props.name}</span>
-          </h2>
+          <h3>
+            Имя: <span>{props.name}</span>
+          </h3>
         </div>
         <div className="item">
-          <h2>
-            Age: <span> {props.age}</span>
-          </h2>
+          <h3>
+            Возраст: <span> {props.age}</span>
+          </h3>
         </div>
         <div className="item">
-          <h2>
-            Education: <span>{props.edu}</span>
-          </h2>
+          <h4>
+            Образование: <span>{props.edu}</span>
+          </h4>
         </div>
         <div className="item">
-          <h2>Technology stack:</h2>
-          <ul>
-            {props.stackTec.map((el) => (
-              <p>{el}</p>
-            ))}
-          </ul>
+          <h3>
+            Стаж работы: <span>{props.work_year}</span>
+          </h3>
         </div>
       </div>
+      <h2>Что я могу</h2>
+      <div className="tech_item">
+            {props.stackTec.map((el) => (
+              <div className="tech_item__elem"><span>{el}</span></div>
+            ))}
+        </div>
     </div>
   );
 };

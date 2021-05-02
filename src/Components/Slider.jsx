@@ -1,7 +1,6 @@
 import React from "react";
 import Card from "./Card";
-import leftIcon from '../img/lefticon.svg'
-import rightIcon from "../img/righticon.svg";
+import { faArrowLeft, faArrowRight} from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useEffect } from "react";
 import { useState } from "react";
@@ -45,10 +44,10 @@ const Slider = (props) => {
         );
       })}
       <button onClick={handle_prev} id="prev">
-        <FontAwesomeIcon icon={leftIcon} className="left-icon" />
+        <FontAwesomeIcon icon={faArrowLeft} className="icon-arrow" />
       </button>
       <button onClick={handle_next} id="next">
-        <FontAwesomeIcon icon={rightIcon} className="right-icon" />
+        <FontAwesomeIcon icon={faArrowRight} className="icon-arrow" />
       </button>
     </div>
   );

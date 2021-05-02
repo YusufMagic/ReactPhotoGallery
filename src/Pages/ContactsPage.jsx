@@ -5,40 +5,60 @@ import email from "../img/envelope-regular.svg";
 import location from "../img/compass-regular.svg";
 import ProfileItem from "../Components/ProfileItem";
 
+import {
+  faInstagram,
+  faVk,
+  faGithub,
+} from "@fortawesome/free-brands-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { Link } from "react-router-dom";
+
 const ContactsPage = () => {
   return (
-    <>
+    <div>
       <div className="ContactPage">
         <div className="aboutme">
           <ProfileItem
-            name={"Yusuf"}
+            name={"Юсуф"}
             age={"20"}
-            edu={"undergraduate"}
-            stackTec={["HTML", "CSS", "JS", "REACT"]}
+            edu={"Бакалавр"}
+            stackTec={["HTML", "CSS", "JS", "REACT", "NODEJS", "PostgreSQL", "Docker", "Git", "Python", "Django"]}
+            work_year={"6 мес"}
           />
         </div>
         <div className="contact-sect">
           <ContactItem
             icon={phone}
-            text1={"+257 7756110718"}
-            text2={"+0333 6782 8792"}
-            title={"Phone"}
+            text1={"+7(904)-767-45-04"}
+            text2={"+277-65-54"}
+            title={"Телефон"}
           />
           <ContactItem
             icon={email}
-            text1={"loremipusum@hmail.com"}
-            text2={"abcloremipsum@gmail.com"}
+            text1={"yusuf.yusuf130@yandex.ru"}
+            text2={"Yusuf.Zarifyanov@icl-services.com"}
             title={"Email"}
           />
           <ContactItem
             icon={location}
-            text1={"25 Paramount St, PN4 8H9 London"}
-            text2={"United Kingdom"}
-            title={"Address"}
+            text1={"Г. Казань, ул. Пушкина, д. К..."}
+            text2={"Россия"}
+            title={"Адрес"}
           />
         </div>
       </div>
-    </>
+      <div className="icons">
+          <Link className="icon-link">
+            <FontAwesomeIcon icon={faVk} className="icon vk" />
+          </Link>
+          <Link className="icon-link">
+            <FontAwesomeIcon icon={faInstagram} className="icon inst" />
+          </Link>
+          <Link className="icon-link">
+            <FontAwesomeIcon icon={faGithub} className="icon git" />
+          </Link>
+        </div>
+    </div>
   );
 };
 
